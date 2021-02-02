@@ -19,8 +19,8 @@
   <bpmn2:itemDefinition id="__A582ABEE-FBBA-43D6-A6EF-4FFAB1536D70_reqOutputXItem" structureRef="com.myspace.events_sample.IncomingRequest"/>
   <bpmn2:itemDefinition id="__B7A2ED06-EBA2-4973-8C02-DD45BE0B0B8A_myVariable2OutputXItem" structureRef="com.myspace.events_sample.IncomingRequest"/>
   <bpmn2:itemDefinition id="newrequestType"/>
-  <bpmn2:message id="_LoOYZWVPEeuUd8GkquzvHQ" itemRef="requestcompletedType" name="requestcompleted"/>
-  <bpmn2:message id="_LoOYVGVPEeuUd8GkquzvHQ" itemRef="newrequestType" name="newrequest"/>
+  <bpmn2:message id="_LoOYZWVPEeuUd8GkquzvHQ" structureRef="com.myspace.events_sample.IncomingRequest" itemRef="requestcompletedType" name="requestcompleted"/>
+  <bpmn2:message id="_LoOYVGVPEeuUd8GkquzvHQ" structureRef="com.myspace.events_sample.IncomingRequest" itemRef="newrequestType" name="newrequest"/>
   <bpmn2:process id="events-sample.RequestManagement" drools:packageName="com.myspace.events_sample" drools:version="1.0" drools:adHoc="false" name="RequestManagement" isExecutable="true" processType="Public">
     <bpmn2:property id="myVariable" itemSubjectRef="_myVariableItem" name="myVariable"/>
     <bpmn2:property id="myVariable2" itemSubjectRef="_myVariable2Item" name="myVariable2"/>
